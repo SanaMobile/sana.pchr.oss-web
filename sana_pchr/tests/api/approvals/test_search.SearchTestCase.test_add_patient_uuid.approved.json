@@ -1,0 +1,128 @@
+{
+  "Clinic": [
+    {
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "language": "ar",
+      "latitude": null,
+      "longitude": null,
+      "name": "cinilC",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "Device": [
+    {
+      "clinic_uuid": "01010101010101010101010101010101",
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "deviceMAC": "",
+      "name": "deviceecived",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "Encounter": [
+    {
+      "category_uuid": "0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d",
+      "clinic_uuid": "01010101010101010101010101010101",
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "device_uuid": "03030303030303030303030303030303",
+      "physician_uuid": "0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>",
+      "visit_uuid": "10101010101010101010101010101010"
+    }
+  ],
+  "Medication": [
+    {
+      "category_uuid": "17171717171717171717171717171717",
+      "comment": null,
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "dose": 2.0,
+      "dose_unit_uuid": "15151515151515151515151515151515",
+      "encounter_uuid": "11111111111111111111111111111111",
+      "end_date": "2016-02-03",
+      "interval": 1,
+      "interval_unit_uuid": "14141414141414141414141414141414",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "times": 3,
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "Patient": [
+    {
+      "UNHCR": "12345678",
+      "birthCity": "Boston",
+      "birthYear": "1950",
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "firstName": "Bob",
+      "gender": "M",
+      "lastName": "Smith",
+      "phone": "",
+      "picture": null,
+      "provider_id": "",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "Physician": [
+    {
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "email": "ilise@med.com",
+      "firstName": "ilise",
+      "lastName": "bhat",
+      "phone": "1234 5678",
+      "picture": null,
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "type": "D",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "Record": [
+    {
+      "category_uuid": "0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e",
+      "comment": "",
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "encounter_uuid": "11111111111111111111111111111111",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>",
+      "value": "Testing 123"
+    }
+  ],
+  "Test": [
+    {
+      "category_uuid": "0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f",
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "encounter_uuid": "11111111111111111111111111111111",
+      "result": "47",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "Visit": [
+    {
+      "category_uuid": "0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c",
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "patient_uuid": "07070707070707070707070707070707",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ]
+}

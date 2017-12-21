@@ -1,0 +1,85 @@
+body {
+	 background-color: white;
+}
+
+.indent {
+	margin-left: 75px;
+}
+
+#title {
+	color: #b32d00;
+}
+
+#subtitle {
+	color: #b32d00;
+}
+
+#meds {
+	margin-left: 60px;
+	width: 1000px;
+}
+
+#favicon {
+	float: left;
+}
+
+#navbar-info {
+	float: left;
+}
+
+#pageheader {
+	background-color: #b32d00
+}
+
+.clear {
+    clear: both;
+}
+
+#usage-table {
+	width: 100%;
+	float: left;
+}
+
+#diagnosis-table {
+	width: 100%;
+	float: left;
+}
+
+#clinic-list { 
+	float: left;
+}
+
+.scrollable-menu {
+	/*adapted from http://www.bootply.com/86116*/
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+#view-stat-btn {
+	float: left;
+	margin-left: 30px;
+}
+
+#selected_value{
+	float: left;
+	margin-left: 30px;
+	width: 300px;
+}
+
+#tables {
+	margin-top: 50px;
+}
+
+.featurebox {
+  /*adapted from: https://www.jeffreytkastner.com/blog/text-box-with-a-background-and-border*/
+  width: 60px;
+  background: #b32d00;
+  color: white;
+  border: 3px solid ##b32d00;
+  border-radius: 10px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding: 8px 8px 8px 8px;
+}
+

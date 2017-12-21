@@ -1,0 +1,154 @@
+{% extends "reporting/base.html" %}
+{% block title %}Clinic Reports{% endblock %}
+{% block content %}
+    <!-- Navbar + Logo -->
+    <nav id="header" class="navbar navbar-default .navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div id="favicon">
+            <a class="navbar-brand" href="#">
+              <img src='/static/reporting/logo.png' alt="icon" style="width:20px;height:20px;">
+            </a>
+          </div>
+          <div id="navbar-info">
+            <p class="navbar-text"> Sana PCHR Clinic Admin Page: quickly visualize statistics about your clinics </p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Title and Description -->
+    <div class="indent">
+      <h1 id="title"> Sana PCHR Clinic Admin Page </h1>
+      <p class="lead" id="subtitle"> View statistics about your clinic below. <p> 
+    </div>
+
+
+    <!-- Clinic Selectors -->
+    <div id="filtertools" class="indent">
+      <div id="clinic-list" class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Select Clinic <span class="caret"></span></button>
+          <ul class="dropdown-menu scrollable-menu" role="menu">
+              <li><a>  [All Clinics] </a></li> 
+              {% for clinic in clinics %}
+                <li><a> {{clinic.name}} </a></li>
+              {% endfor %}
+          </ul>
+      </div>
+      <div>
+        <p id="selected_value" class="featurebox"> Select clinic via dropdown. </p>
+      </div>
+      <div>
+        <button id="view-stat-btn" class="btn btn-default" type="button">
+          View Statistics
+        </button>
+      </div>
+      <div class="clear"></div>
+    </div>
+    
+    <!-- Filter form -->
+    <!--
+    <div id="filtertools" >
+    <form>
+        <div class="form-group">
+            <label for="id_clinic"></label>
+            <select class="form-control" name="selected_clinic" id="id_selected_clinic" >
+                {% for clinic in clinics %}
+                    <option value={{ clinic.uuid }} {% if clinic.uuid == selected_clinic %}selected{% endif %}>{{ clinic.name }}</option> 
+                {% endfor %}
+            </select>
+        </div>
+        <div class="input-group date" data-provide="datepicker">
+            <label for="id_start_date"></label>
+            <input type="text" class="form-control" id="id_start_date" />
+            <div class="input-group-addon">
+                <span class="glyphicon glyphicon-th"></span>
+            </div>
+        </div>
+        <div class="input-group date" data-provide="datepicker">
+            <label for="id_end_date"></label>
+            <input type="text" class="form-control" id="id_end_date" />
+            <div class="input-group-addon">
+                <span class="glyphicon glyphicon-th"></span>
+            </div>
+        </div>
+    </form>
+    -->
+    <!-- Display Tables -->
+    <div id="tables" class="container-fluid">
+      <div>
+        <table id="usage-table" class="table table-striped">
+          <tr> 
+              <th> Time Period </th> 
+              <th> Clinic Name </th> 
+              <th> Patients Seen </th> 
+              <th> Total Encounters </th>
+          </tr>
+          <tbody id="usage-body"> </tbody>
+        </table>
+      </div>
+      <div>
+        <table id="diagnosis-table" class="table table-striped">
+          <tr> 
+              <th> Risk Factor </th> 
+              <th> Patients </th> 
+              <th> Encounters </th> 
+              <th> Uncontrolled </th>
+          </tr>
+          <tbody id="diagnosis-body"> </tbody>
+        </table>
+      </div>
+      <div class="clear"> </div>
+    </div>
+
+    <!-- Load Context from Django View for context passed in view function -->
+    <!-- TODO: try encode resp in json to avoid having to parse below 
+        first for loop parses the usage dictionary passed in from views, which 
+        contains clinic-level encounter data. 
+        second for loop parses the tests dictionary passed in from views, which
+        contains clinic-level test data.
+    -->
+    <script type="text/javascript">
+      var usage = {}
+      var tests = {}
+    </script>
+
+    {% for outer_key, outer_value in usage.items %}
+      <script type="text/javascript"> var entry = {} </script>
+        {% for inner_key, inner_value in outer_value.items %}
+          <script type="text/javascript"> var subentry = {} </script>
+            {% for in_key, in_value in inner_value.items %}
+              <script type="text/javascript"> 
+                  subentry["{{in_key}}"] = "{{in_value}}"  
+              </script>
+            {% endfor %}
+          <script type="text/javascript"> 
+            entry["{{inner_key}}"] = subentry
+          </script>
+        {% endfor %}
+      <script type="text/javascript">
+        usage["{{outer_key}}"] = entry;
+      </script>
+    {% endfor %}
+
+    {% for outer_key, outer_value in tests.items %}
+      <script type="text/javascript"> var entry = {} </script>
+        {% for inner_key, inner_value in outer_value.items %}
+          <script type="text/javascript"> var subentry = {} </script>
+            {% for in_key, in_value in inner_value.items %}
+              <script type="text/javascript"> 
+                  subentry["{{in_key}}"] = "{{in_value}}"  
+              </script>
+            {% endfor %}
+          <script type="text/javascript"> 
+            entry["{{inner_key}}"] = subentry
+          </script>
+        {% endfor %}
+      <script type="text/javascript">
+        tests["{{outer_key}}"] = entry;
+      </script>
+    {% endfor %}
+
+    <!-- Load Controller -->
+    <script type="text/javascript" src="/static/reporting/controller.js"></script>
+{% endblock %}

@@ -1,0 +1,243 @@
+{
+  "Clinic": [
+    {
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "language": "ar",
+      "latitude": null,
+      "longitude": null,
+      "name": "cinilC",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "Device": [
+    {
+      "clinic_uuid": "01010101010101010101010101010101",
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "deviceMAC": "",
+      "name": "deviceecived",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "DoseUnitCategory": [
+    {
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "displayName": "pill",
+      "displayNameAr": "",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "Encounter": [
+    {
+      "category_uuid": "0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b",
+      "clinic_uuid": "01010101010101010101010101010101",
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "device_uuid": "03030303030303030303030303030303",
+      "physician_uuid": "08080808080808080808080808080808",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>",
+      "visit_uuid": "0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e"
+    }
+  ],
+  "EncounterCategory": [
+    {
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "displayName": "",
+      "displayNameAr": "",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "IntervalUnitCategory": [
+    {
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "displayName": "day",
+      "displayNameAr": "",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "Medication": [
+    {
+      "category_uuid": "15151515151515151515151515151515",
+      "comment": null,
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "dose": 2.0,
+      "dose_unit_uuid": "13131313131313131313131313131313",
+      "encounter_uuid": "0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f",
+      "end_date": "2016-02-03",
+      "interval": 1,
+      "interval_unit_uuid": "12121212121212121212121212121212",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "times": 3,
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "MedicationCategory": [
+    {
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "displayName": "Lipitor",
+      "displayNameAr": "",
+      "dose_default": 1.0,
+      "dose_unit_uuid": "13131313131313131313131313131313",
+      "group_uuid": "14141414141414141414141414141414",
+      "interaction_warning": null,
+      "interval_default": 2.0,
+      "interval_unit_uuid": "12121212121212121212121212121212",
+      "otherName": "atorvastatin",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "times_default": 3,
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "MedicationGroupCategory": [
+    {
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "displayName": "statin",
+      "displayNameAr": "",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "Patient": [
+    {
+      "UNHCR": "",
+      "birthCity": "",
+      "birthYear": "",
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "firstName": "Bob",
+      "gender": "M",
+      "lastName": "",
+      "phone": "",
+      "picture": null,
+      "provider_id": "",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "Physician": [
+    {
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "email": "",
+      "firstName": "ilise",
+      "lastName": "bhat",
+      "phone": "",
+      "picture": null,
+      "synchronized": "2003-01-02T12:33:56.789000+00:00",
+      "type": "D",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "Record": [
+    {
+      "category_uuid": "0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c",
+      "comment": "",
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "encounter_uuid": "0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>",
+      "value": "Testing 123"
+    }
+  ],
+  "RecordCategory": [
+    {
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "displayName": "",
+      "displayNameAr": "",
+      "recordType": 123,
+      "resultDataType": "",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    },
+    {
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "displayName": "",
+      "displayNameAr": "",
+      "recordType": 1,
+      "resultDataType": "",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "Test": [
+    {
+      "category_uuid": "0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d",
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "encounter_uuid": "0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f",
+      "result": "47",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "TestCategory": [
+    {
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "displayName": "",
+      "displayNameAr": "",
+      "priority": 1,
+      "resultMax": null,
+      "resultMin": null,
+      "resultType": 1,
+      "resultUnits": null,
+      "resultUnitsAr": null,
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "Visit": [
+    {
+      "category_uuid": "0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a",
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "patient_uuid": "06060606060606060606060606060606",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ],
+  "VisitCategory": [
+    {
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "displayName": "",
+      "displayNameAr": "",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ]
+}

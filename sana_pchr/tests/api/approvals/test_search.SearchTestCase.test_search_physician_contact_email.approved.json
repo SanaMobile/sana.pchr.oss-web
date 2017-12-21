@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "created": "2003-01-02T12:34:56.789000+00:00",
+      "deleted": "9000-12-31T23:59:59.999999+00:00",
+      "device_key_recovery_key": "pbkdf2_sha256$15000$SALT$dhYiy3llTU7+FIal5JAMMqOPVV8sihhvBxAyZ5NHeETwMRQ+cXFxcXFxcXFxcXFxcXFxcT/A0onnvdKCA9bOF0fg8rCOqz+upe7lzyxN2OaEP5VrSJqSPx3JNhkZ4kcCkRWZnQ==",
+      "device_key_user_key": "YfZU27r7vDJaGDvmvz6o0aAcjDLEaHrxatUsROOKMgXwMRQ+cXFxcXFxcXFxcXFxcXFxcSQSdRI1Bn0eDFcJScbVxSbD8xhS8HHtCp9+A/AawuqBkvUbmQCn74cnt+YCz6Chhw==",
+      "firstName": "ilise",
+      "hashedPIN_recovery_key": "pbkdf2_sha256$15000$SALT$5iy+88tXi51ekFHnMYIRtMkut+SdPQiRcWVMYNOjNWzwMRQ+cXFxcXFxcXFxcXFxcXFxcfGMQoCGX81vlqqBu8BWN/0=",
+      "hashedPIN_user_key": "5h/YnhSU50gbZ10C6bAzMlcm2TR9Sr63U3cRMdqpSu/wMRQ+cXFxcXFxcXFxcXFxcXFxcQutMaJQV49o1Mz5GJplcRk=",
+      "lastName": "bhat",
+      "picture": null,
+      "recovery_device_key": "pbkdf2_sha256$15000$SALT$dhYiy3llTU7+FIal5JAMMqOPVV8sihhvBxAyZ5NHeETwMRQ+cXFxcXFxcXFxcXFxcXFxcT/A0onnvdKCA9bOF0fg8rCOqz+upe7lzyxN2OaEP5VrSJqSPx3JNhkZ4kcCkRWZnQ==",
+      "recovery_question": "Alo",
+      "recovery_salt": "VbfM88IZgu99DJlyk3XxAz2wSr+TVrlU1A/xKlE24orwMRQ+cXFxcXFxcXFxcXFxcXFxcUOZAdBbOouye9vfhkwymkM=",
+      "synchronized": "2003-01-02T12:34:56.789000+00:00",
+      "type": "D",
+      "updated": "2003-01-02T12:34:56.789000+00:00",
+      "uuid": "<UUID>"
+    }
+  ]
+]

@@ -1,0 +1,9 @@
+machine:
+  python:
+    version: 3.4.1
+dependencies:
+  override:
+   - pip install -r requirements_dev.txt
+test:
+  override:
+   - invoke test

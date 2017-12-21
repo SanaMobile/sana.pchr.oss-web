@@ -1,0 +1,1 @@
+{"uuid": "92a0bafe803e439f97181b0f7951c410", "token": "99a29be1372f4b539596dfa02be90c31", "name": "Hahaha", "deviceMAC": "ALPHABETSOUP"}

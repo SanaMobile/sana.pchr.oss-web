@@ -1,0 +1,10 @@
+{
+  "error": {
+    "deviceMAC": [
+      "This field is required."
+    ],
+    "name": [
+      "This field is required."
+    ]
+  }
+}
