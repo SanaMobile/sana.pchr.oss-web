@@ -12,6 +12,9 @@ You'll need Python 3, pip, and virtualenv installed first. Note: Your
 Python 3 should installation must have the header files-i.e. install
 ```python3-dev``` or similar package on Linux systems. 
 
+Note that new versions of Python 3 may not be supported due to the version
+of Django used (1.7.5). Python 3.3 has been confirmed to run this successfully.
+
     virtualenv -p python3 env
     source env/bin/activate
     pip install -r requirements_dev.txt
